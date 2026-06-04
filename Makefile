@@ -1,2 +1,2 @@
-run:
-	go run ./cmd/web
+dev:
+	clear && go run ./cmd/web
