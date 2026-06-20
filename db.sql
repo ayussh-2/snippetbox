@@ -45,10 +45,10 @@ shows my father''s face.
     DATE_ADD(UTC_TIMESTAMP(), INTERVAL 7 DAY)
 );
 
-CREATE USER 'web'@'%'
+CREATE USER 'web'@'%';
 
-GRANT SELECT, UPDATE, DELETE,CREATE ON snippetbox.* TO  'web'@'%'
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE ON snippetbox.* TO 'web'@'%';
 
-ALTER USER  'web'@'%' IDENTIFIED BY 'pass'
+ALTER USER 'web'@'%' IDENTIFIED BY 'pass';
 
-SELECT * FROM snippets
+SELECT * FROM snippets;
